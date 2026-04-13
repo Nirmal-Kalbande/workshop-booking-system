@@ -1,0 +1,173 @@
+.workshops-page { min-height: 100vh; }
+
+.workshops-header {
+  background: var(--ink);
+  padding: 56px 24px;
+}
+.workshops-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.workshops-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+.workshops-header p { color: rgba(255,255,255,0.5); font-size: 0.95rem; }
+
+.workshops-body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* FILTERS */
+.filters {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 80px;
+}
+.filter-group { display: flex; flex-direction: column; gap: 10px; }
+.filter-group label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink3);
+}
+.filter-input {
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--bg);
+}
+.filter-input:focus { border-color: var(--accent); }
+.filter-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1.5px solid var(--border);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink2);
+  background: none;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.pill:hover { border-color: var(--ink2); color: var(--ink); }
+.pill.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+/* GRID */
+.workshops-grid { display: flex; flex-direction: column; gap: 16px; }
+.results-count { font-size: 0.82rem; color: var(--ink3); margin-bottom: 4px; }
+
+.workshop-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: all 0.2s;
+}
+.workshop-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.wcard-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.wcard-cat {
+  padding: 3px 10px;
+  background: var(--bg2);
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink2);
+}
+.wcard-level {
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.wcard-level.beginner { background: #f0fdf4; color: #16a34a; }
+.wcard-level.intermediate { background: #fffbeb; color: #d97706; }
+.wcard-level.advanced { background: #fef2f0; color: var(--accent); }
+
+.wcard-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+
+.wcard-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.wcard-meta span { font-size: 0.8rem; color: var(--ink3); }
+
+.wcard-footer { display: flex; justify-content: flex-end; }
+.wcard-btn {
+  padding: 9px 20px;
+  background: var(--ink);
+  color: white;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: all 0.2s;
+  display: inline-block;
+}
+.wcard-btn:hover { background: var(--accent); transform: translateX(2px); }
+
+/* EMPTY */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink3);
+}
+.empty-state span { font-size: 2.5rem; display: block; margin-bottom: 12px; }
+.empty-state p { margin-bottom: 16px; }
+.empty-state button {
+  padding: 9px 20px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--ink2);
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.empty-state button:hover { border-color: var(--accent); color: var(--accent); }
+
+@media (max-width: 768px) {
+  .workshops-body { grid-template-columns: 1fr; }
+  .filters { position: static; }
+}
