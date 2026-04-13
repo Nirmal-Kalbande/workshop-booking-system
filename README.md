@@ -1,46 +1,69 @@
-🪪 Project Identity
-Field	Detail
-Project Title	FOSSEE Workshop Portal — UI/UX Redesign
-Student Name	Nirmal Kalbande
-Institution	    Pimpri Chinchwad University
-Program	B.Tech — Computer Science Engineering
-Fellowship	FOSSEE Fellowship — IIT Bombay
-Task Type	Portal Redesign Task
-Primary Stack	React (Vite) + Django 
+# 🔬 FOSSEE Workshop Portal — UI/UX Redesign
 
+**Fellowship Task | FOSSEE, IIT Bombay**  
+**Submitted by:** Nirmal Kalbande  
 
+---
 
-🧠 Design Decisions & Improvements
-🎯 What design principles guided your improvements?
+## 🪪 Project Identity
 
-While improving the UI, I mainly focused on keeping the design simple and easy to use. I avoided adding unnecessary elements so that users can quickly understand how to navigate the website.
+| Field              | Detail |
+|--------------------|--------|
+| Project Title      | FOSSEE Workshop Portal — UI/UX Redesign |
+| Student Name       | **Nirmal Kalbande** |
+| Institution        | Pimpri Chinchwad University |
+| Program            | B.Tech — Computer Science Engineering |
+| Fellowship         | FOSSEE Fellowship — IIT Bombay |
+| Task Type          | Portal Redesign Task |
+| Primary Stack      | React (Vite) + Django |
 
-I also tried to maintain consistency across all pages by using similar colors, fonts, and layouts. Another important aspect was making sure that important elements like buttons and headings are clearly visible so that users can interact with them easily.
+---
 
-Overall, my goal was to make the interface clean, readable, and user-friendly.
+## 🎯 Overview
 
-📱 How did you ensure responsiveness across devices?
+This project focuses on redesigning the FOSSEE Workshop Portal to improve the overall user experience and interface.
 
-To make the website work properly on different screen sizes, I used CSS features like Flexbox and media queries.
+The main goal was to make the portal more **clean, responsive, and user-friendly**, while keeping the functionality simple and easy to use.
 
-I tested the UI using browser developer tools for different screen sizes such as mobile, tablet, and desktop. Based on that, I adjusted spacing, alignment, and layout so that the content does not break on smaller screens.
+---
 
-I also ensured that components like the navbar and cards adjust properly and remain usable on mobile devices.
+## 🎨 Design Improvements
 
-⚖️ What trade-offs did you make between design and performance?
+- Improved layout structure for better readability  
+- Added card-based UI for workshops  
+- Fixed alignment and spacing issues  
+- Created a clean and simple navigation bar  
+- Enhanced overall visual hierarchy  
 
-While improving the design, I made sure not to overuse heavy styling or animations because that can affect performance.
+---
 
-Instead of adding complex animations or large assets, I focused more on simple and clean UI improvements. This helped in maintaining a balance between better appearance and fast loading time.
+## 📱 Responsiveness
 
-🧩 What was the most challenging part and how did you approach it?
+The UI was designed to work across different devices:
 
-The most challenging part was making the layout responsive, especially for smaller screens. Some elements were not aligning properly, and fixing that required multiple adjustments.
+- Used Flexbox and Grid for layout  
+- Applied responsive styling using CSS  
+- Tested on mobile, tablet, and desktop screens  
 
-To solve this, I worked step by step by modifying CSS properties and checking the results in different screen sizes. I also restructured some components to make them more flexible.
+---
 
-It took some trial and error, but eventually the layout became more stable and consistent across devices.
+## ⚖️ Design vs Performance
 
+- Avoided heavy animations to keep UI smooth  
+- Used simple CSS instead of heavy libraries  
+- Focused on fast loading and clean design  
+
+---
+
+## 🧠 Challenges Faced
+
+The main challenge was making the UI responsive and properly aligned.
+
+- Faced layout issues on smaller screens  
+- Fixed using Flexbox and proper spacing  
+- Tested multiple times to ensure consistency  
+
+---
 
 ## 🖼️ Visual Journey — Before & After
 
@@ -51,63 +74,51 @@ It took some trial and error, but eventually the layout became more stable and c
 
 ### 🟢 After
 
-#### Sign-in Page
-![After 1](screenshots/After_Screenshot0.png)
+![After 1](screenshots/After_Screenshot0.png)  
+![After 2](screenshots/After_Screenshot1.png)  
+![After 3](screenshots/After_Screenshot2.png)  
+![After 4](screenshots/After_Screenshot3.png)  
+![After 5](screenshots/After_Screenshot4.png)
 
-#### Workshops Page
-![After 2](screenshots/After_Screenshot3.png)
+---
 
-#### Booking Page
-![After 3](screenshots/After_Screenshot4.png)
+## 🚀 Setup Requirements
 
-#### Additional Improvements
-![After 4](screenshots/After_Screenshot1.png)
-![After 5](screenshots/After_Screenshot2.png)
+### 📌 Prerequisites
 
+- Python (>= 3.8)  
+- Node.js (>= 16)  
+- npm  
+- Git  
 
+---
 
-👇
+## ⚙️ Installation & Setup
 
-🚀 Setup Requirements
-📌 Prerequisites
-
-Make sure the following are installed on your system:
-
-Python (>= 3.8)
-Node.js (>= 16)
-npm (comes with Node.js)
-Git
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+### 1. Clone Repository
+```bash
 git clone https://github.com/Nirmal-Kalbande/workshop-booking-system.git
 cd workshop-booking-system
-2️⃣ Backend Setup (Django)
-# Create virtual environment
+
+2. Backend Setup (Django)
 python -m venv venv
-
-# Activate virtual environment (Windows)
 venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run migrations
 python manage.py migrate
-
-# Start backend server
 python manage.py runserver
-3️⃣ Frontend Setup (React)
+
+
+3. Frontend Setup (React)
 cd frontend
-
-# Install dependencies
 npm install
-
-# Start frontend server
 npm run dev
+
 🌐 Running the Project
-Backend runs on: http://127.0.0.1:8000
-Frontend runs on: http://localhost:5173
-📝 Notes
-Make sure backend is running before using frontend
-If any error occurs, reinstall dependencies
-Use a modern browser like Chrome
+Backend: http://127.0.0.1:8000
+Frontend: http://localhost:5173
+
+
+📌 Notes
+Start backend before frontend
+Make sure all dependencies are installed
+Use a modern browser for best experience
